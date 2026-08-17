@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MFIIDD — Model fitting and inference for infectious disease dynamics</title>
+<meta name="description" content="Short course on fitting mechanistic models of infectious disease to data, taught by members of the Centre for the Mathematical Modelling of Infectious Diseases at LSHTM.">
+<style>
+  :root {
+    --ground: #fcfdfe;
+    --panel:  #ffffff;
+    --ink:    #16232f;
+    --ink-soft: #4b5c6b;
+    --ink-faint: #74828f;
+    --rule:   #dde5ec;
+    --accent: #2a6fb5;
+    --navy:   #1a3a5c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0e161f;
+      --panel:  #14202c;
+      --ink:    #e6edf3;
+      --ink-soft: #a9b8c6;
+      --ink-faint: #7d8d9c;
+      --rule:   #26364a;
+      --accent: #6aa6e0;
+      --navy:   #9fc2e6;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    padding: clamp(2rem, 8vw, 5rem) clamp(1rem, 5vw, 2rem) 4rem;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  .eyebrow {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-faint); margin: 0 0 0.75rem;
+  }
+  h1 {
+    font-family: ui-serif, "Iowan Old Style", Palatino, Georgia, serif;
+    font-size: clamp(1.9rem, 5vw, 2.75rem); line-height: 1.15;
+    letter-spacing: -0.015em; color: var(--navy); margin: 0 0 1rem; text-wrap: balance;
+  }
+  .lede { font-size: 1.0625rem; color: var(--ink-soft); margin: 0 0 2.5rem; }
+  .card {
+    display: block; background: var(--panel); border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent); border-radius: 0 4px 4px 0;
+    padding: 1.1rem 1.3rem 1.25rem; text-decoration: none; color: inherit;
+    transition: border-color 0.15s ease;
+  }
+  .card:hover, .card:focus-visible { border-color: var(--accent); outline: none; }
+  .card-title { font-weight: 600; font-size: 1.05rem; color: var(--accent); }
+  .card-note { font-size: 0.9rem; color: var(--ink-soft); margin-top: 0.3rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+    font-size: 0.85rem; color: var(--ink-faint);
+  }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">MFIIDD</p>
+  <h1>Model fitting and inference for infectious disease dynamics</h1>
+  <p class="lede">
+    A short course on fitting mechanistic models of infectious disease to data,
+    taught by members of the Centre for the Mathematical Modelling of Infectious
+    Diseases at the London School of Hygiene &amp; Tropical Medicine. It covers
+    likelihoods and Bayes' rule, MCMC and its diagnostics, model checking,
+    particle filters and particle MCMC, observation models and approximate
+    Bayesian computation.
+  </p>
+
+  <a class="card" href="https://mfiidd.github.io/mfiidd/">
+    <span class="card-title">Course materials &rarr;</span>
+    <span class="card-note">The current course, taught in Julia with Turing.jl. Freely available for anyone to work through.</span>
+  </a>
+
+  <footer>
+    Materials are open under the MIT licence.
+    Source at <a href="https://github.com/mfiidd/mfiidd">github.com/mfiidd/mfiidd</a>.
+  </footer>
+</main>
+</body>
+</html>
